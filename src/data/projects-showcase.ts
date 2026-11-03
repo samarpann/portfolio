@@ -10,69 +10,68 @@ export interface ShowcaseProject {
 }
 
 /**
- * SAMPLE PLACEHOLDER PROJECTS FOR PROJECTS SHOWCASE
- * Replace these placeholder images and details with actual project assets.
+ * REAL PROJECTS SHOWCASE DATA
+ * Real client and production projects built and delivered by Webify.
  */
 export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
-    id: "cloudsync",
-    title: "CloudSync Web App",
-    subtitle: "Enterprise cloud sync & management engine",
-    category: "Performance Optimization",
-    date: "March 9, 2026",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "#"
+    id: "swastik-jewels",
+    title: "Swastik Jewels",
+    subtitle: "Luxury fine gold & natural diamond jewellery storefront with curated collections and digital shopping experience.",
+    category: "Luxury E-Commerce",
+    date: "Live Project",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Shopify", "E-Commerce", "Luxury Retail", "Payment Gateway"],
+    link: "https://www.swastikjewel.in/"
   },
   {
-    id: "nova-retail",
-    title: "Nova Commerce Hub",
-    subtitle: "Modern storefront with instant WhatsApp checkouts",
-    category: "E-Commerce & Retail",
-    date: "February 18, 2026",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
-    tags: ["MERN Stack", "Tailwind CSS"],
-    link: "#"
+    id: "sanki-streetwear",
+    title: "SANKI",
+    subtitle: "Contemporary streetwear apparel brand with limited drops, custom fit guides, and seamless mobile checkouts.",
+    category: "Fashion & Retail",
+    date: "Live Project",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Brand Storefront", "Apparel", "E-Commerce", "Mobile-First"],
+    link: "https://sanki.online/"
   },
   {
-    id: "apex-health",
-    title: "Apex Clinical Portal",
-    subtitle: "Automated sample collection & digital patient reports",
-    category: "Healthcare & AI Bot",
-    date: "January 24, 2026",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1000&q=80",
-    tags: ["React Native", "Node.js"],
-    link: "#"
+    id: "swastik-crm",
+    title: "Swastik Gold CRM",
+    subtitle: "Comprehensive gold shop management ERP dashboard for real-time rates, inventory tracking, customer orders, and staff workflows.",
+    category: "Custom CRM & ERP",
+    date: "Live Platform",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Next.js", "Admin Dashboard", "Inventory ERP", "CRM Solution"],
+    link: "https://crm.swastikjewel.in/admin/dashboard"
   },
   {
-    id: "lumina-studio",
-    title: "Lumina Creative Studio",
-    subtitle: "High-fashion editorial portfolio with smooth interactions",
-    category: "Digital Architecture",
-    date: "December 12, 2025",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=80",
-    tags: ["Next.js", "TypeScript"],
-    link: "#"
+    id: "garvik-india",
+    title: "Garvik India",
+    subtitle: "360° strategic marketing, advertising, and creative branding agency platform driving corporate visibility and lead generation.",
+    category: "Digital Agency & Marketing",
+    date: "Live Project",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    tags: ["React", "Corporate Branding", "Tailwind CSS", "Lead Generation"],
+    link: "https://www.garvikindia.com/"
   },
   {
-    id: "horizon-erp",
-    title: "Horizon Logistics ERP",
-    subtitle: "Automated GST invoicing and real-time fleet telemetry",
-    category: "Enterprise Software",
-    date: "November 5, 2025",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
-    tags: ["Flutter", "MongoDB"],
-    link: "#"
+    id: "sauriksha-villa",
+    title: "Sauriksha Villa",
+    subtitle: "Scenic boutique mountain villa & resort near Nainital/Bhimtal featuring direct room bookings and bespoke guest hospitality.",
+    category: "Hospitality & Resort",
+    date: "Live Project",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Hospitality", "Resort Website", "Room Booking", "Travel UX"],
+    link: "https://www.saurikshavilla.com/index.html"
   },
   {
-    id: "pulse-bot",
-    title: "Pulse WhatsApp Engine",
-    subtitle: "24/7 intelligent conversion bot handling 50k+ chats",
-    category: "Conversational AI",
-    date: "October 19, 2025",
-    image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1000&q=80",
-    tags: ["Node.js", "Hostinger", "GitHub"],
-    link: "#"
+    id: "grilli-restaurant",
+    title: "Grilli Restaurant",
+    subtitle: "Exquisite culinary dining experience featuring interactive menus, chef specials, and direct online table reservation engine.",
+    category: "Restaurant & Culinary",
+    date: "Live Project",
+    image: "https://6919d520872fbc7a96a26a0a--mellow-lokum-5f3443.netlify.app/assets/images/hero-slider-1.jpg",
+    tags: ["Food & Beverage", "Table Booking", "Interactive Menu", "Modern Web"],
+    link: "https://6919d520872fbc7a96a26a0a--mellow-lokum-5f3443.netlify.app/"
   }
 ];
-

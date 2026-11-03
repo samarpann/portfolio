@@ -16,6 +16,8 @@ function ProjectCard({ project, index, heightClass }: ProjectCardProps) {
   return (
     <a
       href={project.link || "#"}
+      target={project.link && project.link !== "#" ? "_blank" : undefined}
+      rel="noopener noreferrer"
       className={`group relative w-full ${heightClass} rounded-[26px] sm:rounded-[32px] overflow-hidden bg-white border border-slate-200/90 shadow-[0_4px_20px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_45px_-12px_rgba(2,132,199,0.18)] hover:border-[#38BDF8]/60 transition-all duration-300 flex flex-col justify-between`}
     >
       {/* Upper portion: Project Image */}
