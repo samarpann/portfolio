@@ -2,14 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, FileDown } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Services", href: "/services" },
-    { name: "Our Work", href: "/our-work" },
+    { name: "About", href: "/#about" },
+    { name: "Projects", href: "/#our-work" },
+    { name: "Services", href: "/#services" },
+    { name: "Experience", href: "/#experience" },
   ];
 
   return (
@@ -17,8 +19,8 @@ export default function Navbar() {
       <header className="relative z-30 w-full flex items-center justify-between py-0 select-none">
         
         {/* ========================================================= */}
-        {/* LEFT: Unified Frosted Capsule Pill (Matching Reference)    */}
-        {/* [ Webify  |  Services  Our Work  CRM & Extension ... ]     */}
+        {/* LEFT: Frosted Glass Capsule Pill                          */}
+        {/* [ Samarpan Singh  |  About  Projects  Services  Experience ] */}
         {/* ========================================================= */}
         <div className="flex items-center">
           <div className="flex items-center bg-white/85 hover:bg-white/95 backdrop-blur-md border border-white/90 shadow-[0_4px_20px_rgba(15,23,42,0.05)] rounded-full px-4 sm:px-5 py-2 sm:py-2.5 transition-all">
@@ -28,7 +30,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 group mr-1"
             >
               <span className="font-brand font-extrabold text-sm sm:text-base tracking-tight text-[#0F172A] group-hover:text-[#0284C7] transition-colors">
-                Webify
+                Samarpan Singh
               </span>
             </Link>
 
@@ -60,16 +62,29 @@ export default function Navbar() {
         </div>
 
         {/* ========================================================= */}
-        {/* RIGHT: Glowing Blue Pill CTA (Matching Reference Button)   */}
+        {/* RIGHT: Resume Button & Glowing Blue Pill CTA              */}
         {/* ========================================================= */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Download Resume Button */}
           <a
-            href="https://wa.me/918178557544?text=Hello%20Webify%2C%20I%20would%20like%20to%20start%20a%20new%20project%20for%20my%20business."
+            href="/Samarpan_Singh_Resume.pdf"
+            download="Samarpan_Singh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 px-4 sm:px-4.5 py-2 sm:py-2.5 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200/90 hover:border-slate-300 text-xs sm:text-sm font-semibold shadow-xs hover:shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
+          >
+            <FileDown className="w-3.5 h-3.5 text-[#0284C7]" />
+            <span>Resume</span>
+          </a>
+
+          {/* Primary CTA */}
+          <a
+            href="https://wa.me/918178557544?text=Hello%20Samarpan%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-2 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#0284C7] via-[#0ea5e9] to-[#2563EB] hover:from-[#0369A1] hover:to-[#1D4ED8] text-white text-xs sm:text-sm font-semibold shadow-[0_6px_22px_rgba(2,132,199,0.38)] hover:shadow-[0_8px_28px_rgba(2,132,199,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
-            <span>Start a Project</span>
+            <span>Get in Touch</span>
             <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>
@@ -83,7 +98,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50 md:hidden flex flex-col justify-start pt-20 px-4 bg-slate-900/40 backdrop-blur-md animate-in fade-in duration-200">
           <div className="rounded-3xl bg-white p-6 border border-slate-200 shadow-2xl space-y-6">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-              <span className="font-brand font-bold text-base text-[#0F172A]">Webify Menu</span>
+              <span className="font-brand font-bold text-base text-[#0F172A]">Samarpan Singh</span>
               <button onClick={() => setIsOpen(false)} className="p-1 text-slate-400 hover:text-slate-600">
                 <X className="w-5 h-5" />
               </button>
@@ -103,15 +118,27 @@ export default function Navbar() {
               ))}
             </nav>
 
-            <div className="pt-2">
+            <div className="pt-2 space-y-2.5">
               <a
-                href="https://wa.me/918178557544?text=Hello%20Webify%2C%20I%20would%20like%20to%20start%20a%20new%20project%20for%20my%20business."
+                href="/Samarpan_Singh_Resume.pdf"
+                download="Samarpan_Singh_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200 text-sm font-semibold shadow-xs active:scale-95 transition-all"
+              >
+                <FileDown className="w-4 h-4 text-[#0284C7]" />
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <a
+                href="https://wa.me/918178557544?text=Hello%20Samarpan%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-gradient-to-r from-[#0284C7] to-[#2563EB] text-white text-sm font-semibold shadow-[0_6px_20px_rgba(2,132,199,0.35)] active:scale-95 transition-all"
               >
-                <span>Start a Project</span>
+                <span>Get in Touch (WhatsApp)</span>
                 <ArrowUpRight className="w-4 h-4 text-white" />
               </a>
             </div>

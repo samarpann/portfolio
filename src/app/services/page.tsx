@@ -22,28 +22,28 @@ export default function ServicesPage() {
   const serviceInclusions = [
     {
       number: "01",
-      title: "Architecture & Technical Discovery",
-      description: "In-depth audit of your business requirements, audience behavior, and operational goals to architect a scalable, future-proof digital blueprint."
+      title: "Technical Discovery & Schema Design",
+      description: "Detailed architecture analysis of requirements, data models, MongoDB schemas, and user workflows to ensure clean, maintainable systems."
     },
     {
       number: "02",
       title: "Custom UI/UX & Interactive Design",
-      description: "Pixel-perfect, brand-tailored interfaces crafted with clear typography, intuitive user journeys, and high-converting micro-interactions."
+      description: "Pixel-perfect, brand-tailored interfaces crafted with Tailwind CSS, clear typography, intuitive user journeys, and responsive layouts."
     },
     {
       number: "03",
       title: "Full-Stack Engineering & API Integration",
-      description: "Robust development using Next.js App Router, Tailwind CSS, TypeScript, and secure database schemas with seamless third-party API connectivity."
+      description: "End-to-end development using React.js, Next.js, Node.js, Express.js, and secure RESTful endpoints with third-party connectivity."
     },
     {
       number: "04",
-      title: "AI Automation & Multi-Channel Deployment",
-      description: "Intelligent WhatsApp business bots, automated lead capture pipelines, and webhook triggers that handle inquiries around the clock."
+      title: "Automation & Multi-Channel Workflows",
+      description: "Custom WhatsApp business notifications, webhook integrations, and automated lead capture pipelines that streamline operations."
     },
     {
       number: "05",
-      title: "Continuous Performance & Cloud Telemetry",
-      description: "99+ Google PageSpeed compliance, global CDN edge caching, SSL encryption, and ongoing infrastructure maintenance."
+      title: "Continuous Performance & Code Quality",
+      description: "High Google PageSpeed compliance, mobile responsiveness, clean modular components, and modern version control workflows."
     }
   ];
 
@@ -74,7 +74,7 @@ export default function ServicesPage() {
         <ServicesSection />
 
         {/* ======================================================== */}
-        {/* 2. FEATURED PROJECTS ("Our Boldest Collaborations")      */}
+        {/* 2. FEATURED PROJECTS ("Selected Collaborations")         */}
         {/* ======================================================== */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-200/80">
           
@@ -82,10 +82,10 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-14">
             <div>
               <div className="font-mono text-xs sm:text-sm text-[#0284C7] font-bold tracking-wider uppercase mb-2">
-                // FEATURED PROJECT
+                // FEATURED PROJECTS
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight">
-                Our Boldest Collaborations
+                Selected Work &amp; Case Studies
               </h2>
             </div>
 
@@ -93,7 +93,7 @@ export default function ServicesPage() {
               href="/our-work"
               className="inline-flex items-center gap-2 text-sm font-bold text-[#0284C7] hover:text-[#0369A1] group transition-colors"
             >
-              <span>View All Case Studies ({SHOWCASE_PROJECTS.length})</span>
+              <span>View All Projects ({SHOWCASE_PROJECTS.length})</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -101,9 +101,11 @@ export default function ServicesPage() {
           {/* Horizontal Project Showcase Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {SHOWCASE_PROJECTS.slice(0, 4).map((project) => (
-              <Link
+              <a
                 key={project.id}
-                href="/our-work"
+                href={project.link || "#"}
+                target={project.link && project.link !== "#" ? "_blank" : undefined}
+                rel="noopener noreferrer"
                 className="group rounded-2xl sm:rounded-3xl p-4 bg-white border border-[#BAE6FD]/80 shadow-[0_10px_30px_-8px_rgba(2,132,199,0.08)] hover:border-[#38BDF8] hover:shadow-[0_20px_40px_-10px_rgba(2,132,199,0.18)] transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
@@ -143,9 +145,9 @@ export default function ServicesPage() {
                 {/* Tags Footer */}
                 <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-[#0284C7]">
                   <span>{project.tags.slice(0, 2).join(" • ")}</span>
-                  <span className="text-slate-400 font-sans text-[10px]">{project.date.split(",")[1] || "2026"}</span>
+                  <span className="text-slate-400 font-sans text-[10px]">{project.date}</span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -161,25 +163,25 @@ export default function ServicesPage() {
             {/* Left Column: Heading, Explanation & Aesthetic Visual */}
             <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
               <div className="font-mono text-xs sm:text-sm text-[#0284C7] font-bold tracking-wider uppercase">
-                // WHAT&apos;S INCLUDED
+                // ENGINEERING STANDARDS
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight">
-                Included in <br className="hidden sm:inline" />
-                the Service
+                Development <br className="hidden sm:inline" />
+                Process
               </h2>
               <p className="text-base text-[#475569] leading-relaxed">
-                From initial technical architecture to final performance tuning, every solution is delivered complete, secure, and production-ready with zero hidden surprises.
+                From initial technical discovery to final deployment, every project is delivered complete, performant, and maintainable.
               </p>
 
-              {/* Small Aesthetic Card Matching Reference Style */}
+              {/* Aesthetic Card */}
               <div className="relative w-full h-[180px] sm:h-[220px] rounded-2xl overflow-hidden border border-[#BAE6FD] shadow-md bg-gradient-to-tr from-[#E0F2FE] to-[#BAE6FD]/30 p-6 flex flex-col justify-between">
                 <div className="w-10 h-10 rounded-xl bg-white shadow-xs flex items-center justify-center text-[#0284C7]">
                   <Layers className="w-5 h-5 text-[#0284C7]" />
                 </div>
                 <div>
-                  <span className="font-mono text-xs text-[#0284C7] font-bold uppercase tracking-wider">PRODUCTION STANDARDS</span>
+                  <span className="font-mono text-xs text-[#0284C7] font-bold uppercase tracking-wider">CODE QUALITY</span>
                   <p className="text-sm text-[#0F172A] font-bold mt-1 leading-snug">
-                    Continuous monitoring, Google PageSpeed compliance, and enterprise SLAs built into every project.
+                    Robust API validation, responsive mobile layouts, and modern Git workflows across all platforms.
                   </p>
                 </div>
               </div>
@@ -231,29 +233,29 @@ export default function ServicesPage() {
               <div className="lg:col-span-7 space-y-5 sm:space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-[#BAE6FD] shadow-2xs text-[#0284C7] text-xs font-semibold">
                   <Sparkles className="w-3.5 h-3.5 text-[#0284C7]" />
-                  <span>START A PROJECT</span>
+                  <span>START A COLLABORATION</span>
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-[1.12]">
-                  Let&apos;s Make It <br />
+                  Let&apos;s Build Something <br />
                   <span className="font-serif italic font-normal text-[#0284C7]">
-                    Real &amp; Scalable.
+                    Remarkable &amp; Scalable.
                   </span>
                 </h2>
 
                 <p className="text-base text-[#475569] leading-relaxed max-w-lg">
-                  Whether you need a high-converting website, an automated WhatsApp engine, or bespoke operations software, our team is ready to deploy your vision.
+                  Whether you need a full-stack web application, custom admin CRM, or backend API integration, I am available to discuss requirements and deliver.
                 </p>
 
                 {/* Primary & Secondary Action Buttons */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
                   <a
-                    href="https://wa.me/918178557544?text=Hello%20Webify%2C%20I%20would%20like%20to%20start%20a%20new%20project%20for%20my%20business."
+                    href="https://wa.me/918178557544?text=Hello%20Samarpan%2C%20I%20would%20like%20to%20discuss%20a%20project%20or%20job%20opportunity."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#0284C7] via-[#0ea5e9] to-[#2563EB] hover:from-[#0369A1] hover:to-[#1D4ED8] text-white font-bold text-sm shadow-[0_6px_22px_rgba(2,132,199,0.38)] hover:shadow-[0_8px_28px_rgba(2,132,199,0.5)] active:scale-95 transition-all group"
                   >
-                    <span>Start a Project on WhatsApp</span>
+                    <span>Connect on WhatsApp</span>
                     <ArrowUpRight className="w-4 h-4 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
 
@@ -261,7 +263,7 @@ export default function ServicesPage() {
                     href="/our-work"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-[#0F172A] font-semibold text-sm shadow-xs transition-colors"
                   >
-                    <span>Explore Our Work</span>
+                    <span>Explore Projects</span>
                   </Link>
                 </div>
               </div>
@@ -271,11 +273,11 @@ export default function ServicesPage() {
                 <div className="rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-white/95 backdrop-blur-md border border-[#BAE6FD]/90 shadow-xl space-y-5">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                     <span className="font-mono text-xs font-bold text-[#0284C7] uppercase tracking-wider">
-                      DIRECT INQUIRY
+                      DIRECT CONTACT
                     </span>
                     <span className="flex items-center gap-1.5 text-xs text-emerald-600 font-semibold">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                      Online Now
+                      Available Now
                     </span>
                   </div>
 
@@ -285,7 +287,7 @@ export default function ServicesPage() {
                         <MessageSquare className="w-4.5 h-4.5" />
                       </div>
                       <div>
-                        <span className="font-bold text-[#0F172A] block text-sm">Instant WhatsApp Chat</span>
+                        <span className="font-bold text-[#0F172A] block text-sm">Direct WhatsApp</span>
                         <span className="text-xs text-[#64748B]">+91 81785 57544</span>
                       </div>
                     </div>
@@ -295,19 +297,17 @@ export default function ServicesPage() {
                         <Clock className="w-4.5 h-4.5" />
                       </div>
                       <div>
-                        <span className="font-bold text-[#0F172A] block text-sm">Response Guarantee</span>
-                        <span className="text-xs text-[#64748B]">Under 15 minutes during business hours</span>
+                        <span className="font-bold text-[#0F172A] block text-sm">Email Inquiries</span>
+                        <span className="text-xs text-[#64748B]">samarpansingh17@gmail.com</span>
                       </div>
                     </div>
                   </div>
 
                   <a
-                    href="https://wa.me/918178557544?text=Hello%20Webify%2C%20I%20would%20like%20to%20discuss%20a%20project%20scope."
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:samarpansingh17@gmail.com"
                     className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0F172A] hover:bg-[#0284C7] text-white text-xs sm:text-sm font-bold transition-colors shadow-sm"
                   >
-                    <span>Connect with an Engineer</span>
+                    <span>Send an Email</span>
                     <Send className="w-3.5 h-3.5" />
                   </a>
                 </div>

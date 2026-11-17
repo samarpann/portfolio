@@ -52,21 +52,21 @@ export default function ServicesSection() {
         <div className="inline-block">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0284C7] bg-[#E0F2FE]/80 border border-[#BAE6FD] shadow-xs">
             <Sparkles className="w-3 h-3 text-[#0284C7]" />
-            <span>DIGITAL CAPABILITIES</span>
+            <span>FULL STACK EXPERTISE</span>
           </div>
         </div>
 
-        {/* Main Heading with "Modernize & Grow" Highlight */}
+        {/* Main Heading */}
         <h2 className="text-2xl sm:text-3xl lg:text-[2.65rem] font-extrabold text-[#0F172A] tracking-tight leading-[1.18]">
-          Everything You Need to <br />
+          Technical Capabilities &amp; <br />
           <span className="font-serif italic font-normal text-[#0284C7]">
-            Modernize &amp; Grow
+            What I Build
           </span>
         </h2>
 
         {/* Subtitle */}
         <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed max-w-lg mx-auto font-normal">
-          Digital tools built to help ambitious local businesses move forward.
+          Scalable web architectures, high-performance user interfaces, and custom business platforms engineered to perform.
         </p>
 
       </div>
@@ -77,7 +77,7 @@ export default function ServicesSection() {
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 items-stretch max-w-6xl mx-auto">
         
         {/* ------------------------------------------------------ */}
-        {/* CARD 1: High-Speed Mobile Websites                     */}
+        {/* CARD 1: Full-Stack Web Applications                    */}
         {/* ------------------------------------------------------ */}
         <div className="group rounded-2xl sm:rounded-3xl p-5 sm:p-6 bg-white border border-[#38BDF8] shadow-[0_10px_30px_-5px_rgba(56,189,248,0.12)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
           
@@ -121,14 +121,14 @@ export default function ServicesSection() {
 
                   {/* Mockup Button */}
                   <div className="w-full h-3 rounded-full bg-[#0284C7] text-white flex items-center justify-center text-[6px] font-bold">
-                    Book Now
+                    View Demo
                   </div>
                 </div>
 
                 {/* Floating Right UI Pill */}
                 <div className="absolute right-1 bottom-3 p-1.5 rounded-lg bg-white/95 backdrop-blur-md border border-[#BAE6FD] shadow-md transform rotate-6 z-10 group-hover:scale-105 transition-transform">
                   <div className="w-4.5 h-4.5 rounded bg-[#0284C7] text-white flex items-center justify-center text-[8px] font-bold">
-                    SEO
+                    MERN
                   </div>
                 </div>
               </div>
@@ -137,10 +137,10 @@ export default function ServicesSection() {
             {/* Title & Description */}
             <div className="space-y-1.5 pt-0.5">
               <h3 className="text-base sm:text-lg font-bold text-[#0F172A] tracking-tight group-hover:text-[#0284C7] transition-colors">
-                High-Speed Mobile Websites
+                Full-Stack Web Applications
               </h3>
               <p className="text-xs text-[#64748B] leading-relaxed">
-                Next.js ultra-fast mobile storefronts with 99+ Google PageSpeed, instant lead capture, and Google Maps local SEO.
+                Responsive, high-performance web applications built with React.js, Next.js, and Tailwind CSS. Clean component modularity and seamless UX.
               </p>
             </div>
 
@@ -150,22 +150,22 @@ export default function ServicesSection() {
           <div className="pt-3 mt-4 border-t border-slate-100 space-y-1.5">
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Next.js App Router &amp; Tailwind CSS</span>
+              <span>React.js, Next.js &amp; Redux Toolkit</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Google Maps Profile Ranking</span>
+              <span>Mobile-First Responsive Layouts</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Domain &amp; Cloud Hosting Included</span>
+              <span>Modern State Management &amp; UI Speed</span>
             </div>
           </div>
 
         </div>
 
         {/* ------------------------------------------------------ */}
-        {/* CARD 2: 24/7 WhatsApp Chatbots                         */}
+        {/* CARD 2: API & Automation Integrations                  */}
         {/* ------------------------------------------------------ */}
         <div className="group rounded-2xl sm:rounded-3xl p-5 sm:p-6 bg-white border border-slate-200/90 shadow-[0_10px_30px_-5px_rgba(15,23,42,0.04)] hover:border-[#38BDF8] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
           
@@ -212,10 +212,10 @@ export default function ServicesSection() {
             {/* Title & Description */}
             <div className="space-y-1.5 pt-0.5">
               <h3 className="text-base sm:text-lg font-bold text-[#0F172A] tracking-tight group-hover:text-[#0284C7] transition-colors">
-                24/7 WhatsApp Chatbots
+                API &amp; Automation Integrations
               </h3>
               <p className="text-xs text-[#64748B] leading-relaxed">
-                Automate inquiries, send instant product catalogs, book appointments, and dispatch auto-replies directly on WhatsApp.
+                Connect your business logic to third-party services: automated WhatsApp workflows, payment webhooks, and secure RESTful endpoints.
               </p>
             </div>
 
@@ -225,15 +225,15 @@ export default function ServicesSection() {
           <div className="pt-3 mt-4 border-t border-slate-100 space-y-1.5">
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Instant Auto-Reply Under 15 Seconds</span>
+              <span>WhatsApp Business API Workflows</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Digital Catalog &amp; PDF Delivery</span>
+              <span>Secure Authentication &amp; Webhooks</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Zero Server Latency</span>
+              <span>Third-Party Gateway Connectivity</span>
             </div>
           </div>
 
@@ -315,7 +315,7 @@ export default function ServicesSection() {
                 {/* Right Floating Bar Chart Pill */}
                 <div className="absolute right-1 bottom-3 p-1.5 rounded-lg bg-[#0284C7] text-white shadow-md transform rotate-6 z-10 flex items-center gap-1 group-hover:scale-105 transition-transform">
                   <BarChart3 className="w-3 h-3" />
-                  <span className="text-[8px] font-bold">GST Invoicing</span>
+                  <span className="text-[8px] font-bold">Admin ERP</span>
                 </div>
               </div>
             </div>
@@ -323,10 +323,10 @@ export default function ServicesSection() {
             {/* Title & Description */}
             <div className="space-y-1.5 pt-0.5">
               <h3 className="text-base sm:text-lg font-bold text-[#0F172A] tracking-tight group-hover:text-[#0284C7] transition-colors">
-                Custom CRM &amp; ERP Software
+                Custom CRM &amp; Admin ERP
               </h3>
               <p className="text-xs text-[#64748B] leading-relaxed">
-                Bespoke operations software with automated GST billing, live stock tracking, customer records, and staff management.
+                Full-featured internal dashboards (like Swastik CRM) with live rate tracking, customer records, inventory management, and database schemas.
               </p>
             </div>
 
@@ -336,15 +336,15 @@ export default function ServicesSection() {
           <div className="pt-3 mt-4 border-t border-slate-100 space-y-1.5">
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Automated WhatsApp GST Invoicing</span>
+              <span>Node.js, Express &amp; MongoDB Backend</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Real-Time Inventory &amp; Stock Audit</span>
+              <span>Real-Time Inventory &amp; Records Tracking</span>
             </div>
             <div className="flex items-center gap-2 text-[11px] sm:text-xs text-[#0F172A] font-medium">
               <CheckCircle2 className="w-3.5 h-3.5 text-[#0284C7] shrink-0" />
-              <span>Role-Based Staff Access</span>
+              <span>Role-Based Access &amp; Workflow Logic</span>
             </div>
           </div>
 

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Webify — Modern Digital Agency & Systems",
-  description: "We Webify Your Local Business with High-Converting Websites, WhatsApp Bots & Custom ERPs.",
+  title: "Samarpan Singh — Full Stack Web Developer | MERN Stack",
+  description: "Personal portfolio of Samarpan Singh, Full Stack Web Developer based in Delhi, India. Specializing in MERN stack, React.js, Node.js, MongoDB, Express, and modern digital platforms.",
 };
 
 export default function RootLayout({
@@ -19,4 +19,3 @@ export default function RootLayout({
     </html>
   );
 }
-

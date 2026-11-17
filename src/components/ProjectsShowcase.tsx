@@ -67,7 +67,7 @@ export default function ProjectsShowcase() {
       {/* Section Header */}
       <div className="text-center">
         <h2 className="text-3xl sm:text-5xl font-extrabold text-[#0F172A] tracking-tight">
-          Our Work
+          Featured Projects
         </h2>
       </div>
 

@@ -17,23 +17,23 @@ import {
 export default function WhatsAppChatbotSection() {
   const featureCards = [
     {
-      title: "Instant 24/7 Response",
-      description: "Never lose a prospect who messages after showroom hours.",
+      title: "Direct Communication",
+      description: "Fast responses via WhatsApp or email to discuss project requirements.",
       icon: Zap,
     },
     {
-      title: "Automated Follow-ups",
-      description: "Nurture pending leads with zero manual typing.",
+      title: "Clean MERN Architecture",
+      description: "Maintainable React components, robust Node/Express APIs, and scalable MongoDB.",
       icon: Users,
     },
     {
-      title: "Share Pricing & Catalogs",
-      description: "Instantly send product catalogs, prices, and PDFs on WhatsApp.",
+      title: "End-to-End Delivery",
+      description: "From UI design and database schemas to production deployment and monitoring.",
       icon: BarChart3,
     },
     {
-      title: "Book Appointments",
-      description: "Turn inquiries into confirmed bookings automatically.",
+      title: "Rapid Prototyping",
+      description: "Fast turnarounds on MVPs, prototypes, and production feature updates.",
       icon: Calendar,
     },
   ];
@@ -87,24 +87,24 @@ export default function WhatsAppChatbotSection() {
           <div className="inline-block">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0284C7] bg-[#E0F2FE] border border-[#BAE6FD] shadow-xs">
               <Zap className="w-3 h-3 text-[#0284C7] fill-[#0284C7]" />
-              <span>INSTANT CUSTOMER CONVERSION</span>
+              <span>COMMUNICATION &amp; WORKFLOW</span>
             </div>
           </div>
 
           {/* Main Dominant Heading */}
           <div className="space-y-1">
             <h2 className="text-2xl sm:text-3xl lg:text-[1.95rem] xl:text-[2.35rem] 2xl:text-[2.5rem] font-extrabold text-[#0F172A] tracking-tight leading-[1.14]">
-              Turn Every WhatsApp <br className="hidden sm:inline" />
-              Inquiry into a <br />
+              Let&apos;s Build Your Next <br className="hidden sm:inline" />
+              Digital Platform <br />
               <span className="font-serif italic font-normal text-[#0284C7]">
-                Confirmed Paying Customer
+                Together With Precision
               </span>
             </h2>
           </div>
 
           {/* Supporting Description */}
           <p className="text-xs sm:text-[13px] xl:text-sm text-[#64748B] leading-relaxed max-w-lg font-normal">
-            Our custom WhatsApp bot and CRM extension instantly answers client queries, shares pricing and catalogs, and sends automatic follow-ups while you focus on running your business.
+            Whether you need a modern web application, custom internal CRM portal, API integration, or automated workflows, I deliver scalable, production-ready code with responsive communication.
           </p>
 
           {/* 4 Compact Feature Cards in a 2x2 Grid */}
@@ -135,22 +135,28 @@ export default function WhatsAppChatbotSection() {
           </div>
 
           {/* CTA Button */}
-          <div className="pt-1">
+          <div className="pt-1 flex flex-wrap items-center gap-3">
             <a
-              href="https://wa.me/918178557544?text=Hello%20Webify%2C%20show%20me%20a%20live%20WhatsApp%20bot%20demo."
+              href="https://wa.me/918178557544?text=Hello%20Samarpan%2C%20I%20would%20like%20to%20discuss%20a%20project%20or%20job%20opportunity."
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-2 px-6 py-2.5 sm:py-3 rounded-full bg-[#0F172A] hover:bg-[#1E293B] text-white text-xs sm:text-[13px] font-semibold shadow-md shadow-slate-900/10 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
-              <span>Test WhatsApp Demo Bot</span>
+              <span>Chat on WhatsApp</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#7DD3FC] group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="mailto:samarpansingh17@gmail.com"
+              className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200 text-xs sm:text-[13px] font-semibold shadow-xs hover:shadow-sm transition-all"
+            >
+              <span>Send an Email</span>
             </a>
           </div>
 
         </div>
 
         {/* ------------------------------------------------------ */}
-        {/* RIGHT COLUMN: Realistic Scaled WhatsApp Chatbot Mockup */}
+        {/* RIGHT COLUMN: Scaled Interactive Chat Mockup           */}
         {/* ------------------------------------------------------ */}
         <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center py-4 lg:py-2">
           
@@ -160,50 +166,50 @@ export default function WhatsAppChatbotSection() {
           {/* Unified Compact Mockup + Surrounding Floating Elements Wrapper */}
           <div className="relative w-full max-w-[320px] sm:max-w-[350px] xl:max-w-[365px]">
             
-            {/* 1. Floating WhatsApp Badge (Tightly hugging top-left corner of mockup) */}
+            {/* 1. Floating WhatsApp Badge */}
             <div className="absolute -top-3 -left-3 sm:-top-3.5 sm:-left-3.5 z-20 flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white border border-slate-200/90 shadow-md shadow-emerald-500/10">
               <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-[#25D366]" viewBox="0 0 24 24">
                 <path d="M12.031 2c-5.508 0-9.986 4.471-9.986 9.974 0 1.764.464 3.486 1.346 5.013l-1.428 5.213 5.342-1.4c1.474.805 3.134 1.229 4.826 1.229 5.508 0 9.985-4.471 9.985-9.975 0-5.503-4.477-9.974-9.985-9.974zm5.794 14.113c-.244.685-1.421 1.312-1.956 1.38-.517.066-1.189.094-1.922-.141-.444-.143-1.018-.332-1.761-.653-3.117-1.353-5.143-4.526-5.3-4.733-.155-.208-1.268-1.688-1.268-3.22 0-1.533.805-2.287 1.09-2.585.285-.298.625-.373.834-.373.208 0 .416.002.599.011.193.009.452-.073.707.539.263.633.9 2.203.978 2.363.078.16.131.348.026.557-.104.208-.157.339-.312.52-.155.18-.328.403-.468.541-.155.155-.317.324-.136.634.181.311.808 1.334 1.733 2.158 1.19 1.06 2.193 1.389 2.504 1.545.311.155.493.13.676-.078.181-.208.777-.905.984-1.216.208-.311.415-.26.696-.155.281.104 1.782.84 2.089.995.307.155.512.234.588.364.076.13.076.753-.168 1.438z"/>
               </svg>
             </div>
 
-            {/* 2. Floating Leads Card (Tightly hugging mid-left edge of mockup) */}
+            {/* 2. Floating Delivery Card */}
             <div className="absolute top-[28%] -left-6 sm:-left-8 z-20 hidden sm:flex flex-col items-center justify-center py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-md shadow-slate-900/5 select-none hover:scale-105 transition-transform">
               <BarChart3 className="w-3.5 h-3.5 text-[#0284C7]" />
-              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Leads</span>
-              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">+240%</span>
+              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Projects</span>
+              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">5+ Live</span>
             </div>
 
-            {/* 3. Floating Bookings Card (Tightly hugging top-right edge of mockup) */}
+            {/* 3. Floating Response Card */}
             <div className="absolute top-6 -right-6 sm:-right-8 z-20 hidden sm:flex flex-col items-center justify-center py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-md shadow-slate-900/5 select-none hover:scale-105 transition-transform">
               <Calendar className="w-3.5 h-3.5 text-[#0284C7]" />
-              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Bookings</span>
-              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">+180%</span>
+              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Response</span>
+              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">&lt; 1 Hour</span>
             </div>
 
-            {/* 4. Floating Customers Card (Tightly hugging bottom-right edge of mockup) */}
+            {/* 4. Floating Experience Card */}
             <div className="absolute bottom-8 -right-6 sm:-right-8 z-20 hidden sm:flex flex-col items-center justify-center py-1.5 px-2.5 sm:py-2 sm:px-3 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-md shadow-slate-900/5 select-none hover:scale-105 transition-transform">
               <Users className="w-3.5 h-3.5 text-[#0284C7]" />
-              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Customers</span>
-              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">+3x</span>
+              <span className="text-[9px] font-semibold text-[#64748B] mt-0.5">Experience</span>
+              <span className="text-[11px] sm:text-xs font-extrabold text-emerald-600 tracking-tight">2+ Years</span>
             </div>
 
-            {/* Main Scaled WhatsApp Chatbot Mockup Window */}
+            {/* Main WhatsApp Window */}
             <div className="relative z-10 w-full rounded-2xl sm:rounded-[22px] bg-white border border-slate-200/90 shadow-[0_15px_35px_-10px_rgba(15,23,42,0.08)] overflow-hidden flex flex-col justify-between">
               
               {/* Mockup Header */}
               <div className="px-3.5 py-2.5 border-b border-slate-100 flex items-center justify-between bg-white select-none">
                 <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-[#25D366] text-white flex items-center justify-center font-bold text-[11px] shadow-xs">
-                    WA
+                  <div className="w-7 h-7 rounded-full bg-[#0284C7] text-white flex items-center justify-center font-bold text-[11px] shadow-xs">
+                    SS
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-[#0F172A] tracking-tight">
-                      Webify Bot Assistant
+                      Samarpan Singh
                     </h4>
                     <div className="flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                      <span className="text-[9px] text-emerald-600 font-medium">Online 24/7</span>
+                      <span className="text-[9px] text-emerald-600 font-medium">Available for Opportunities</span>
                     </div>
                   </div>
                 </div>
@@ -216,18 +222,18 @@ export default function WhatsAppChatbotSection() {
               {/* Mockup Chat Body */}
               <div className="p-3 space-y-2 bg-[#FAFBFD] min-h-[240px] sm:min-h-[255px] flex flex-col justify-start">
               
-              {/* Message 1: Bot Welcome */}
+              {/* Message 1 */}
               <div className="flex flex-col items-start max-w-[88%]">
                 <div className="p-2.5 sm:p-3 rounded-xl rounded-tl-xs bg-white border border-slate-200/80 shadow-xs text-[11px] sm:text-xs text-[#0F172A] leading-relaxed">
-                  Namaste! Welcome to Webify. How can we assist your business today?
+                  Hi! I&apos;m Samarpan, a Full Stack Developer specializing in the MERN stack and Next.js. How can I help you?
                 </div>
                 <span className="text-[9px] text-slate-400 mt-0.5 pl-1">10:24 AM</span>
               </div>
 
-              {/* Message 2: User Query */}
+              {/* Message 2 */}
               <div className="flex flex-col items-end max-w-[85%] ml-auto">
                 <div className="p-2.5 sm:p-3 rounded-xl rounded-tr-xs bg-[#0284C7] text-white text-[11px] sm:text-xs leading-relaxed shadow-xs">
-                  I need a modern website and WhatsApp automated booking.
+                  We are looking for a developer to build a modern web app &amp; internal CRM dashboard.
                 </div>
                 <div className="flex items-center gap-1 text-[9px] text-slate-400 mt-0.5 pr-1">
                   <span>10:25 AM</span>
@@ -238,14 +244,14 @@ export default function WhatsAppChatbotSection() {
                 </div>
               </div>
 
-              {/* Message 3: Bot Response & Prompt */}
+              {/* Message 3 */}
               <div className="flex flex-col items-start max-w-[92%] space-y-0.5">
                 <div className="p-2.5 sm:p-3 rounded-xl rounded-tl-xs bg-white border border-slate-200/80 shadow-xs text-[11px] sm:text-xs text-[#0F172A] leading-relaxed space-y-1">
                   <p>
-                    Awesome! We launch high-converting websites in ~5 days with full domain &amp; source code ownership.
+                    I have built platforms like Swastik CRM, Swastik Jewels, and FundSphere with real-time rate sync and role-based workflows!
                   </p>
                   <p className="font-semibold text-[#0284C7]">
-                    Would you like to review our client portfolio?
+                    Would you like to review my live projects?
                   </p>
                 </div>
                 <span className="text-[9px] text-slate-400 pl-1">10:25 AM</span>
@@ -257,23 +263,21 @@ export default function WhatsAppChatbotSection() {
                   href="#our-work"
                   className="px-2.5 py-1 rounded-full bg-[#0284C7] hover:bg-[#0369A1] text-white text-[10px] font-semibold shadow-xs hover:shadow-sm transition-all"
                 >
-                  View Portfolio
+                  View Projects
                 </a>
                 <a
-                  href="https://wa.me/918178557544?text=Hello%20Webify%2C%20what%20are%20your%20pricing%20packages%3F"
+                  href="https://wa.me/918178557544?text=Hello%20Samarpan%2C%20I%20would%20like%20to%20discuss%20a%20project."
                   target="_blank"
                   rel="noreferrer"
                   className="px-2.5 py-1 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200/90 text-[10px] font-semibold shadow-xs hover:shadow-sm transition-all"
                 >
-                  Get Pricing
+                  Chat on WhatsApp
                 </a>
                 <a
-                  href="https://wa.me/918178557544?text=Hello%20Webify%2C%20I%20would%20like%20to%20book%20a%20call."
-                  target="_blank"
-                  rel="noreferrer"
+                  href="mailto:samarpansingh17@gmail.com"
                   className="px-2.5 py-1 rounded-full bg-white hover:bg-slate-50 text-[#0F172A] border border-slate-200/90 text-[10px] font-semibold shadow-xs hover:shadow-sm transition-all"
                 >
-                  Book a Call
+                  Send Email
                 </a>
               </div>
 
@@ -286,13 +290,15 @@ export default function WhatsAppChatbotSection() {
                 <span>Type a message...</span>
                 <Paperclip className="w-3.5 h-3.5 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer shrink-0" />
               </div>
-              <button 
-                type="button"
-                aria-label="Send message"
+              <a 
+                href="https://wa.me/918178557544"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Send message on WhatsApp"
                 className="w-6 h-6 rounded-full bg-[#0F172A] hover:bg-[#0284C7] text-white flex items-center justify-center transition-colors shadow-xs shrink-0"
               >
                 <Send className="w-3 h-3 ml-0.5" />
-              </button>
+              </a>
             </div>
 
           </div>

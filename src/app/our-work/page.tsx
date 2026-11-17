@@ -25,9 +25,17 @@ export default function OurWorkPage() {
       {/* 2. Main Page Heading                                     */}
       {/* ======================================================== */}
       <div className="relative z-10 pt-8 sm:pt-12 pb-6 sm:pb-8 text-center max-w-4xl mx-auto px-4">
+        <div className="inline-block mb-3">
+          <span className="text-[11px] font-mono font-bold tracking-widest text-[#0284C7] uppercase px-3 py-1 rounded-full bg-[#E0F2FE] border border-[#BAE6FD]">
+            PORTFOLIO SHOWCASE
+          </span>
+        </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight">
-          Digital Platforms &amp; Intelligent Systems
+          Selected Projects &amp; Digital Platforms
         </h1>
+        <p className="mt-3 text-sm sm:text-base text-[#64748B] max-w-xl mx-auto">
+          Production web applications, client storefronts, and custom CRM systems built and maintained by Samarpan Singh.
+        </p>
       </div>
 
       {/* ======================================================== */}
