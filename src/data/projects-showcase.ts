@@ -10,19 +10,29 @@ export interface ShowcaseProject {
 }
 
 /**
- * SAMARPAN SINGH - SELECTED PRODUCTION PROJECTS
- * Real client and production projects built and maintained by Samarpan Singh.
+ * SAMARPAN SINGH - SELECTED PRODUCTION & CLIENT PROJECTS
+ * Real client, production, and enterprise platforms built and delivered by Samarpan Singh.
  */
 export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
     id: "swastik-jewels",
     title: "Swastik Jewels",
-    subtitle: "Luxury fine gold and natural diamond jewellery storefront presenting products and online brand presence with an interactive catalog.",
-    category: "E-Commerce & Brand",
+    subtitle: "Luxury fine gold and natural diamond jewellery storefront presenting products, curated collections, and digital shopping experience.",
+    category: "Luxury E-Commerce",
     date: "Production",
     image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80",
     tags: ["React", "E-Commerce", "Tailwind CSS", "REST APIs"],
     link: "https://www.swastikjewel.in/"
+  },
+  {
+    id: "sanki-streetwear",
+    title: "SANKI",
+    subtitle: "Contemporary streetwear apparel brand with limited drops, custom fit guides, and seamless mobile-first checkout experience.",
+    category: "Fashion & Retail",
+    date: "Live Brand",
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Brand Storefront", "Apparel", "E-Commerce", "Mobile-First"],
+    link: "https://sanki.online/"
   },
   {
     id: "swastik-crm",
@@ -33,6 +43,16 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     tags: ["React", "Node.js", "Express", "MongoDB", "Dashboard ERP"],
     link: "https://crm.swastikjewel.in/"
+  },
+  {
+    id: "garvik-india",
+    title: "Garvik India",
+    subtitle: "360° strategic marketing, advertising, and creative branding agency platform driving corporate visibility and lead generation.",
+    category: "Digital Agency & Marketing",
+    date: "Live Client",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    tags: ["React", "Corporate Branding", "Tailwind CSS", "Lead Generation"],
+    link: "https://www.garvikindia.com/"
   },
   {
     id: "rk-steel-company",
@@ -47,7 +67,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
     id: "fundsphere",
     title: "FundSphere",
-    subtitle: "Modern financial services and wealth management platform delivering clean interfaces, financial resources, and service calculators.",
+    subtitle: "Modern financial services and wealth management platform delivering clean interfaces, financial resources, and digital tools.",
     category: "Fintech & Web Platform",
     date: "Production",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
@@ -65,13 +85,23 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     link: "https://www.drnidan.in/"
   },
   {
-    id: "dice-hackathon-platform",
-    title: "Dice Hackathon Winner",
-    subtitle: "Award-winning full-stack web application engineered during the Dice Academy Hackathon, securing 2nd place among competitive teams.",
-    category: "Hackathon 2nd Place",
-    date: "Award 2025",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
-    tags: ["MERN Stack", "Hackathon", "Rapid Prototyping", "Full Stack"],
-    link: "https://github.com/samarpann"
+    id: "sauriksha-villa",
+    title: "Sauriksha Villa",
+    subtitle: "Scenic boutique mountain villa and resort near Nainital/Bhimtal featuring direct room bookings and bespoke guest hospitality.",
+    category: "Hospitality & Resort",
+    date: "Live Client",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Hospitality", "Resort Website", "Room Booking", "Travel UX"],
+    link: "https://www.saurikshavilla.com/index.html"
+  },
+  {
+    id: "grilli-restaurant",
+    title: "Grilli Restaurant",
+    subtitle: "Exquisite culinary dining experience featuring interactive menus, chef specials, and direct online table reservation engine.",
+    category: "Culinary & Dining",
+    date: "Live Project",
+    image: "https://6919d520872fbc7a96a26a0a--mellow-lokum-5f3443.netlify.app/assets/images/hero-slider-1.jpg",
+    tags: ["Food & Beverage", "Table Booking", "Interactive Menu", "Modern Web"],
+    link: "https://6919d520872fbc7a96a26a0a--mellow-lokum-5f3443.netlify.app/"
   }
 ];

@@ -61,6 +61,15 @@ function ProjectCard({ project, index, heightClass }: ProjectCardProps) {
 }
 
 export default function ProjectsShowcase() {
+  // Distribute across 3 staggered columns for Desktop
+  const col1 = SHOWCASE_PROJECTS.map((p, idx) => ({ p, idx })).filter((_, i) => i % 3 === 0);
+  const col2 = SHOWCASE_PROJECTS.map((p, idx) => ({ p, idx })).filter((_, i) => i % 3 === 1);
+  const col3 = SHOWCASE_PROJECTS.map((p, idx) => ({ p, idx })).filter((_, i) => i % 3 === 2);
+
+  // Distribute across 2 columns for Tablet
+  const tabCol1 = SHOWCASE_PROJECTS.map((p, idx) => ({ p, idx })).filter((_, i) => i % 2 === 0);
+  const tabCol2 = SHOWCASE_PROJECTS.map((p, idx) => ({ p, idx })).filter((_, i) => i % 2 === 1);
+
   return (
     <section id="our-work" className="relative py-20 sm:py-28 px-4 sm:px-8 lg:px-14 max-w-7xl mx-auto space-y-12">
       
@@ -72,25 +81,43 @@ export default function ProjectsShowcase() {
       </div>
 
       {/* ======================================================== */}
-      {/* DESKTOP LAYOUT (3-Column Masonry Collage - Screenshot 3) */}
+      {/* DESKTOP LAYOUT (3-Column Masonry Collage)                 */}
       {/* ======================================================== */}
       <div className="hidden lg:grid grid-cols-3 gap-6 sm:gap-7 items-start">
         {/* Column 1 */}
         <div className="flex flex-col gap-6 sm:gap-7">
-          <ProjectCard project={SHOWCASE_PROJECTS[0]} index={0} heightClass="h-[530px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[3]} index={3} heightClass="h-[390px]" />
+          {col1.map(({ p, idx }, i) => (
+            <ProjectCard
+              key={p.id}
+              project={p}
+              index={idx}
+              heightClass={i % 2 === 0 ? "h-[530px]" : "h-[400px]"}
+            />
+          ))}
         </div>
 
         {/* Column 2 (Offset staggered rhythm) */}
         <div className="flex flex-col gap-6 sm:gap-7 pt-6">
-          <ProjectCard project={SHOWCASE_PROJECTS[1]} index={1} heightClass="h-[350px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[4]} index={4} heightClass="h-[490px]" />
+          {col2.map(({ p, idx }, i) => (
+            <ProjectCard
+              key={p.id}
+              project={p}
+              index={idx}
+              heightClass={i % 2 === 0 ? "h-[360px]" : "h-[490px]"}
+            />
+          ))}
         </div>
 
         {/* Column 3 */}
         <div className="flex flex-col gap-6 sm:gap-7">
-          <ProjectCard project={SHOWCASE_PROJECTS[2]} index={2} heightClass="h-[460px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[5]} index={5} heightClass="h-[380px]" />
+          {col3.map(({ p, idx }, i) => (
+            <ProjectCard
+              key={p.id}
+              project={p}
+              index={idx}
+              heightClass={i % 2 === 0 ? "h-[470px]" : "h-[390px]"}
+            />
+          ))}
         </div>
       </div>
 
@@ -100,16 +127,26 @@ export default function ProjectsShowcase() {
       <div className="hidden md:grid lg:hidden grid-cols-2 gap-6 items-start">
         {/* Column 1 */}
         <div className="flex flex-col gap-6">
-          <ProjectCard project={SHOWCASE_PROJECTS[0]} index={0} heightClass="h-[480px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[2]} index={2} heightClass="h-[390px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[4]} index={4} heightClass="h-[460px]" />
+          {tabCol1.map(({ p, idx }, i) => (
+            <ProjectCard
+              key={p.id}
+              project={p}
+              index={idx}
+              heightClass={i % 2 === 0 ? "h-[480px]" : "h-[390px]"}
+            />
+          ))}
         </div>
 
         {/* Column 2 */}
         <div className="flex flex-col gap-6">
-          <ProjectCard project={SHOWCASE_PROJECTS[1]} index={1} heightClass="h-[370px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[3]} index={3} heightClass="h-[480px]" />
-          <ProjectCard project={SHOWCASE_PROJECTS[5]} index={5} heightClass="h-[390px]" />
+          {tabCol2.map(({ p, idx }, i) => (
+            <ProjectCard
+              key={p.id}
+              project={p}
+              index={idx}
+              heightClass={i % 2 === 0 ? "h-[380px]" : "h-[480px]"}
+            />
+          ))}
         </div>
       </div>
 
